@@ -1,212 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Velp | Coming Soon</title>
-    <style>
-      :root {
-        --primary: #0274f8;
-        --dark: #03194b;
-        --neutral: #35333d;
-        --light: #f8f9fa;
-      }
 
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: "Poppins", system-ui, -apple-system, sans-serif;
-      }
+<head>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velp | Coming Soon</title>
 
-      body {
-        background-color: var(--light);
-        color: var(--neutral);
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        overflow-x: hidden;
-      }
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+</head>
 
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-      }
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="images/Logo-Primary.webp" alt="logo velp" />
+      </div>
+    </header>
 
-      header {
-        position: relative;
-        height: 100px;
-      }
+    <div class="main-content">
+      <div class="text-content">
+        <h1>Velp is <span>coming soon</span>!</h1>
+        <p>
+          We're building a platform for pet lovers and professionals with
+          tools to report lost and found animals, browse helpful articles and
+          access tips for traveling with pets.
+        </p>
+      </div>
 
-      header img {
-        position: absolute;
-        top: -50px;
-        left: -50px;
-        height: 200px;
-        z-index: 10;
-      }
-
-      .main-content {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex: 1;
-        gap: 4rem;
-        padding: 4rem 0;
-      }
-
-      .text-content {
-        flex: 1;
-        max-width: 600px;
-      }
-
-      h1 {
-        font-size: 3.5rem;
-        margin-bottom: 1.5rem;
-        line-height: 1.2;
-        color: var(--dark);
-        font-weight: 800;
-      }
-
-      h1 span {
-        color: var(--primary);
-      }
-
-      p {
-        font-size: 1.2rem;
-        line-height: 1.6;
-        color: var(--neutral);
-        margin-bottom: 2.5rem;
-        max-width: 500px;
-      }
-
-      .pet-grid {
-        flex: 1;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 1rem;
-        max-width: 500px;
-      }
-
-      .pet-card {
-        border-radius: 16px;
-        overflow: hidden;
-        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-        transition: all 0.3s ease;
-        height: 250px; /* Set fixed height for first two cards */
-      }
-
-      .pet-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-      }
-
-      .pet-card img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      .card-large {
-        grid-column: span 2;
-        height: 260px; /* Match height with the first two cards */
-      }
-
-      footer {
-        text-align: center;
-        padding: 2rem;
-        color: var(--neutral);
-        font-size: 0.9rem;
-        opacity: 0.7;
-      }
-
-      @media (max-width: 768px) {
-        .main-content {
-          flex-direction: column;
-          text-align: center;
-          padding: 2rem 0;
-          gap: 2rem;
-        }
-
-        header {
-          height: auto;
-          display: flex;
-          justify-content: center;
-        }
-
-        header img {
-          position: static;
-          height: 150px;
-          transform: none;
-          left: auto;
-          top: auto;
-        }
-
-        .text-content {
-          max-width: 100%;
-        }
-
-        h1 {
-          font-size: 2.5rem;
-        }
-
-        p {
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        .pet-grid {
-          max-width: 100%;
-        }
-
-        .pet-card,
-        .card-large {
-          height: 150px; /* Adjust height for mobile */
-        }
-      }
-    </style>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <div class="container">
-      <header>
-        <div class="logo">
-          <img src="images/Logo-Primary.png" alt="logo velp" />
+      <div class="pet-grid">
+        <div class="pet-card">
+          <img src="images/poster5@2x.webp" alt="Happy golden retriever" />
         </div>
-      </header>
-
-      <div class="main-content">
-        <div class="text-content">
-          <h1>Velp is <span>coming soon</span>!</h1>
-          <p>
-            We're building a platform for pet lovers and professionals with
-            tools to report lost and found animals, browse helpful articles and
-            access tips for traveling with pets.
-          </p>
+        <div class="pet-card">
+          <img src="images/poster8@2x.webp" alt="Cute cat" />
         </div>
-
-        <div class="pet-grid">
-          <div class="pet-card">
-            <img src="images/poster5@2x.png" alt="Happy golden retriever" />
-          </div>
-          <div class="pet-card">
-            <img src="images/poster8@2x.png" alt="Cute cat" />
-          </div>
-          <div class="pet-card card-large">
-            <img src="images/poster6@2x.png" alt="Dog playing with ball" />
-          </div>
+        <div class="pet-card card-large">
+          <img src="images/poster6@2x.webp" alt="Dog playing with ball" />
         </div>
       </div>
     </div>
 
-    <footer>© 2025 Velp. All rights reserved</footer>
-  </body>
+    <footer>
+      © 2025 <a href="https://www.dipawer.com" target="_blank" rel="noopener noreferrer">Dipawer</a>. All rights
+      reserved
+    </footer>
+  </div>
+</body>
+
 </html>
